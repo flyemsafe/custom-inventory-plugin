@@ -2,10 +2,9 @@
 #playbook.yaml
 
 - name: DISPLAY THE INVENTORY VARS
-  hosts: nxos, core # These are dynamically generated groups from the plugin
+  hosts: all
   gather_facts: no
   tasks:
-    - name: DISPLAY THE HOST VARS
+    - name: display host info
       debug:
-        msg: "The mgmt IP is {{ ansible_host }} and platorm is {{ ansible_network_os }}"
-      
+        msg: "The mgmt IP is {{ ansible_host }} and kvmhost is {{ ansible_kvmhost }}"

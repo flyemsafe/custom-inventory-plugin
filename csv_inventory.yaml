@@ -1,6 +1,5 @@
 ---
 #csv_plugin.yaml
-
-plugin: my_csv_plugin            # Name of the plugin
-path_to_inventory: csv_inventory # Directory location of CSV
-csv_file: myinventory.csv        # Name of the inventory file 
+plugin: my_csv_plugin
+path_to_inventory: csv_inventory
+csv_file: kvm_inventory.csv
